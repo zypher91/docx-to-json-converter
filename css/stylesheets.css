@@ -1,0 +1,58 @@
+:root {
+    --barcolor: rgba(0, 0, 0, .75);
+    --sidecolor: rgba(0, 0, 0, .50);
+    --linkcolor: white;
+}
+
+body {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: var(--linkcolor);
+}
+
+.wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header, .footer {
+    height: 50px;
+    background-color: var(--barcolor);
+}
+
+.header > ul {
+    text-align: end;
+    padding-right: 5px;
+}
+
+.main {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content > iframe {
+    flex: 1;
+}
+
+.leftsidebar {
+    width: 10%;
+    text-align: center;
+    background-color: var(--sidecolor);
+}

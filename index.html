@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/stylesheets.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="img/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/icon/favicon-16x16.png">
+    <link rel="manifest" href="img/icon/site.webmanifest">
+
+    <script type="module" src="scripts/index.js"></script>
+
+    <title>DOCX TO JSON VIEWER</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <ul>
+                <li><a href="load-files.html" target="iframe">Forside</a></li>
+            </ul>
+        </header>
+        <main class="main">
+            <aside class="leftsidebar">
+                <div class="buttons">
+                    <input type="button" value="Clear" id="clear-button">
+                </div>
+                <ul id="sidebarul">
+                </ul>
+            </aside>
+            <div class="content">
+                <input type="file" id="file-input" multiple accept=".docx">
+                <hr>
+                <iframe src="show-file.html" frameborder="0" name="iframe" id="iframe"></iframe>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+</body>
+</html>
